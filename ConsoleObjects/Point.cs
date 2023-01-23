@@ -62,8 +62,8 @@ namespace ConsoleObjects
         }
         public void Draw()
         {
-            Console.SetCursorPosition(x + 20, -y + 20);
-            Console.WriteLine(this);
+            Console.SetCursorPosition(x, y);
+            Console.WriteLine("*");
 
         }
 }

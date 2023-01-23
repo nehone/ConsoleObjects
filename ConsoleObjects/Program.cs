@@ -5,12 +5,10 @@ namespace ConsoleObjects
     {
         static void Main(string[] args)
         {
-            int x = 55;
-            int x2 = 0;
+            int x = 18;
+            int x2 = 20;
             Point p = new Point(x, x2, "A");
-            int y = 0;
-            int y2 = x2 / 2;
-            Point p2 = new Point(y, y2, "B");
+
             for (int i = 0; i < 40; i++)
             {
                 Console.SetCursorPosition(18, i);
@@ -21,11 +19,16 @@ namespace ConsoleObjects
                 Console.SetCursorPosition(i, 20);
                 Console.WriteLine("-");
             }
+        }
+    }
 
-            p2.Draw();
-            p.Draw();
-            
-            Console.ReadLine();
+    internal class circle
+    {
+        public bool isinside(Point p, Point p2)
+        {
+
+
+            return true;
         }
     }
 }
