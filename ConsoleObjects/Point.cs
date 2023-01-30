@@ -10,8 +10,14 @@ namespace ConsoleObjects
 
     public class Point
     {
-        private int x; private int y; private string name;
-
+        protected int x; protected int y; private string name;
+        public static char currentLetter = 'A';
+        public Point(int xCoor, int yCoor)
+        {
+            x = xCoor;
+            y = yCoor;
+            name = "" + currentLetter++;
+        }
         public Point(int xCoor, int yCoor, string nammme)
         {
             x = xCoor;
@@ -60,13 +66,14 @@ namespace ConsoleObjects
 
             else return -1;
         }
+
         public void Draw()
         {
-            Console.SetCursorPosition(x, y);
-            Console.WriteLine("*");
+            Console.SetCursorPosition(x+20, -y+20);
+            Console.WriteLine(this);
 
         }
-}
+    }
 }
 
 

@@ -8,7 +8,7 @@ namespace ConsoleObjects
             int x = 18;
             int x2 = 20;
             Point p = new Point(x, x2, "A");
-
+            Sprite s = new Sprite(5,5);
             for (int i = 0; i < 40; i++)
             {
                 Console.SetCursorPosition(18, i);
@@ -19,6 +19,10 @@ namespace ConsoleObjects
                 Console.SetCursorPosition(i, 20);
                 Console.WriteLine("-");
             }
+            //Console.WriteLine(p);
+            p.Draw();
+            s.Draw();
+            Console.ReadLine();
         }
     }
 
@@ -31,4 +35,6 @@ namespace ConsoleObjects
             return true;
         }
     }
+
+
 }
